@@ -7,8 +7,8 @@ package com.javarush.test.level04.lesson01.task01;
 */
 public class Solution
 {
-    public static void main(String[] args) {
-
+    public static void main(String[] args)
+    {
         Person person = new Person();
         System.out.println("Age is: " + person.age);
         person.adjustAge(person.age);
