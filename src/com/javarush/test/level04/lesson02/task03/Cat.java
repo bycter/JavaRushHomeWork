@@ -8,6 +8,6 @@ public class Cat {
     private static int catsCount = 0;
 
     public static void setCatsCount(int catsCount_) {
-        catsCount = catsCount_;
+        Cat.catsCount = catsCount_;
     }
 }

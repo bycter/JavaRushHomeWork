@@ -21,7 +21,7 @@ public class Solution
 
         public static void addPrice(int applesPrice_int)
         {
-            applesPrice += applesPrice_int;
+            Apple.applesPrice += applesPrice_int;
         }
     }
 }
