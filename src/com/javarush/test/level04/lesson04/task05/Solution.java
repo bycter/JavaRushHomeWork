@@ -19,10 +19,11 @@ public class Solution
 
         Integer number = Integer.parseInt(reader.readLine());
 
-        if (number >= 0){
+        if (number >= 0)
+        {
             number *= 2;
-        }
-        else {
+        } else
+        {
             number++;
         }
         System.out.println(number);
