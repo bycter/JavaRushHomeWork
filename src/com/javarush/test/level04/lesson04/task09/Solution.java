@@ -33,7 +33,7 @@ public class Solution
 
             String bufferVar = reader.readLine();
 
-            if(bufferVar.equals("exit"))
+            if (bufferVar.equals("exit"))
             {
                 System.out.println("Program terminated.");
                 return;
@@ -50,7 +50,8 @@ public class Solution
                 continue;
             }
 
-            if (duration < 0 || duration > 60){
+            if (duration < 0 || duration > 60)
+            {
                 System.out.println("Не верные данные! Вещественное число должно быть в диапазоне от 0 до 60.");
                 continue;
             }
