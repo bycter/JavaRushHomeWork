@@ -25,50 +25,29 @@ public class Solution
 {
     public static void main(String[] args) throws Exception
     {
-        while (true)
+        InputStream inputStream = System.in;
+        InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader reader = new BufferedReader(inputStreamReader);
+
+        String bufferVar = reader.readLine();
+
+        Double duration = Double.parseDouble(bufferVar);
+
+        Integer durationGreen = 3, durationYellow = 1, durationRed = 1;
+        Double resDuration = (duration % (durationGreen + durationYellow + durationRed));
+
+        if (resDuration < durationGreen)
+
         {
-            InputStream inputStream = System.in;
-            InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-            BufferedReader reader = new BufferedReader(inputStreamReader);
+            System.out.println("зеленый");
+        } else if (resDuration < (durationGreen + durationYellow))
 
-            String bufferVar = reader.readLine();
+        {
+            System.out.println("желтый");
+        } else if (resDuration < (durationGreen + durationYellow + durationRed))
 
-            if (bufferVar.equals("exit"))
-            {
-                System.out.println("Program terminated.");
-                return;
-            }
-
-            Double duration;
-            try
-            {
-                duration = Double.parseDouble(bufferVar);
-            }
-            catch (NumberFormatException e)
-            {
-                System.out.println("Не верные данные! Введите число.");
-                continue;
-            }
-
-            if (duration < 0 || duration > 60)
-            {
-                System.out.println("Не верные данные! Вещественное число должно быть в диапазоне от 0 до 60.");
-                continue;
-            }
-
-            Integer durationGreen = 3, durationYellow = 1, durationRed = 1;
-            Double resDuration = (duration % (durationGreen + durationYellow + durationRed));
-
-            if (resDuration < durationGreen)
-            {
-                System.out.println("зеленый");
-            } else if (resDuration < (durationGreen + durationYellow))
-            {
-                System.out.println("желтый");
-            } else if (resDuration < (durationGreen + durationYellow + durationRed))
-            {
-                System.out.println("красный");
-            }
+        {
+            System.out.println("красный");
         }
     }
 }
