@@ -53,10 +53,10 @@ public class Solution
         {
             if ((a + b) <= c || (a + c) <= b || (b + c) <= a)
             {
-                System.out.println("Такой треугольник не существует!");
+                System.out.println("Треугольник не существует.");
             } else
             {
-                System.out.println("Такой треугольник существует!");
+                System.out.println("Треугольник существует.");
             }
         } else
         {
