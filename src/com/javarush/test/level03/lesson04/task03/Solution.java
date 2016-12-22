@@ -5,12 +5,8 @@ package com.javarush.test.level03.lesson04.task03;
 Дать им всем уникальные имена.
 */
 
-import java.util.Collection;
-
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         Zerg zerg1 = new Zerg();
         Zerg zerg2 = new Zerg();
         Zerg zerg3 = new Zerg();
@@ -71,18 +67,15 @@ public class Solution
 
     }
 
-    public static class Zerg
-    {
+    public static class Zerg {
         public String name;
     }
 
-    public static class Protos
-    {
+    public static class Protos {
         public String name;
     }
 
-    public static class Terran
-    {
+    public static class Terran {
         public String name;
     }
 }

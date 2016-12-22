@@ -5,10 +5,8 @@ package com.javarush.test.level03.lesson06.task03;
 Каждый объект при создании выводит на экран определенный цвет.
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         Red red = new Red();
         Orange orange = new Orange();
         Yellow yellow = new Yellow();
@@ -18,58 +16,44 @@ public class Solution
         Violet violet = new Violet();
     }
 
-    public static class Red
-    {
-        public Red()
-        {
+    public static class Red {
+        public Red() {
             System.out.println("Red");
         }
     }
 
-    public static class Orange
-    {
-        public Orange()
-        {
+    public static class Orange {
+        public Orange() {
             System.out.println("Orange");
         }
     }
 
-    public static class Yellow
-    {
-        public Yellow()
-        {
+    public static class Yellow {
+        public Yellow() {
             System.out.println("Yellow");
         }
     }
 
-    public static class Green
-    {
-        public Green()
-        {
+    public static class Green {
+        public Green() {
             System.out.println("Green");
         }
     }
 
-    public static class Blue
-    {
-        public Blue()
-        {
+    public static class Blue {
+        public Blue() {
             System.out.println("Blue");
         }
     }
 
-    public static class Indigo
-    {
-        public Indigo()
-        {
+    public static class Indigo {
+        public Indigo() {
             System.out.println("Indigo");
         }
     }
 
-    public static class Violet
-    {
-        public Violet()
-        {
+    public static class Violet {
+        public Violet() {
             System.out.println("Violet");
         }
     }

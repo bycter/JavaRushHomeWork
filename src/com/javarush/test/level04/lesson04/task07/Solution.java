@@ -14,10 +14,8 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         InputStream inputStream = System.in;
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader reader = new BufferedReader(inputStreamReader);
@@ -27,24 +25,19 @@ public class Solution
         setNumberDaysOfYear(number);
     }
 
-    public static void setNumberDaysOfYear(Integer number)
-    {
+    public static void setNumberDaysOfYear(Integer number) {
         boolean flag_operation = false;
 
-        if ((number % 4) == 0)
-        {
+        if ((number % 4) == 0) {
             flag_operation = true;
         }
-        if ((number % 100) == 0 && ((number % 400) != 0))
-        {
+        if ((number % 100) == 0 && ((number % 400) != 0)) {
             flag_operation = false;
         }
 
-        if (flag_operation)
-        {
+        if (flag_operation) {
             System.out.println("количество дней в году: 366");
-        } else
-        {
+        } else {
             System.out.println("количество дней в году: 365");
         }
     }

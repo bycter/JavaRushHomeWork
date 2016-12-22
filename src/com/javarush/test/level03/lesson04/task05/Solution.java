@@ -15,13 +15,10 @@ package com.javarush.test.level03.lesson04.task05;
 ...
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         int result = 0;
-        for (int i = 1; i <= 10; i++)
-        {
+        for (int i = 1; i <= 10; i++) {
             result += i;
             System.out.println(result);
         }

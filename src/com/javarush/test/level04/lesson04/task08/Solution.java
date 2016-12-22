@@ -15,10 +15,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         InputStream inputStream = System.in;
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader reader = new BufferedReader(inputStreamReader);
@@ -27,19 +25,14 @@ public class Solution
         Integer a = 0;
         Integer b = 0;
         Integer c = 0;
-        try
-        {
+        try {
             a = Integer.parseInt(reader.readLine());
             b = Integer.parseInt(reader.readLine());
             c = Integer.parseInt(reader.readLine());
-        }
-        catch (NumberFormatException e)
-        {
+        } catch (NumberFormatException e) {
             e.printStackTrace();
             accept = false;
-        }
-        catch (IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
             accept = false;
         }
@@ -49,17 +42,13 @@ public class Solution
         if (a <= 0 || b <= 0 || c <= 0) accept = false;
         if (a > maxNumber || b > maxNumber || c > maxNumber) accept = false;
 
-        if (accept)
-        {
-            if ((a + b) <= c || (a + c) <= b || (b + c) <= a)
-            {
+        if (accept) {
+            if ((a + b) <= c || (a + c) <= b || (b + c) <= a) {
                 System.out.println("Треугольник не существует.");
-            } else
-            {
+            } else {
                 System.out.println("Треугольник существует.");
             }
-        } else
-        {
+        } else {
             System.out.println("Операция не может быть выполнена, не верные параметры.");
         }
 

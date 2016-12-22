@@ -5,16 +5,13 @@ package com.javarush.test.level03.lesson05.task03;
 Вызовите его дважды в методе main с любыми параметрами. Результаты выведите на экран, каждый раз с новой строки.
 */
 
-public class Solution
-{
+public class Solution {
 
-    public static int convertToSeconds(int hour)
-    {
+    public static int convertToSeconds(int hour) {
         return hour * 3600;
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         System.out.println(convertToSeconds(2));
         System.out.println(convertToSeconds(4));
     }

@@ -8,15 +8,11 @@ package com.javarush.test.level03.lesson06.task02;
 …
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
-        for (int i = 1; i <= 10; i++)
-        {
+public class Solution {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
             int j;
-            for (j = 1; j < 10; j++)
-            {
+            for (j = 1; j < 10; j++) {
                 System.out.print((i * j) + " ");
             }
             System.out.println(i * j);

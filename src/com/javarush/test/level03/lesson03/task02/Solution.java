@@ -6,14 +6,13 @@ package com.javarush.test.level03.lesson03.task02;
 Подсказка:
 Расчет выполняется по формуле: долларСША = евро * курс
 */
-public class Solution
-{
+public class Solution {
     public static void main(String[] args) {
         System.out.println(convertEurToUsd(23, 1.9));
         System.out.println(convertEurToUsd(15, 1.5));
     }
 
-    public static double convertEurToUsd(int eur, double course){
+    public static double convertEurToUsd(int eur, double course) {
         return eur * course;
     }
 }
