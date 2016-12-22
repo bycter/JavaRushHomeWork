@@ -6,21 +6,17 @@ package com.javarush.test.level04.lesson06.task01;
 
 import java.io.*;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         Integer a = Integer.parseInt(reader.readLine());
         Integer b = Integer.parseInt(reader.readLine());
         Integer c;
 
-        if (a < b)
-        {
+        if (a < b) {
             c = a;
-        } else
-        {
+        } else {
             c = b;
         }
 

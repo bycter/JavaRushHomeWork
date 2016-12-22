@@ -7,10 +7,8 @@ package com.javarush.test.level04.lesson06.task03;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         int a = Integer.parseInt(reader.readLine());
@@ -21,45 +19,36 @@ public class Solution
 
         int max = 0, mid = 0, min = 0;
 
-        if (a >= maxValue(b, c))
-        {
+        if (a >= maxValue(b, c)) {
             max = a;
-            if (b >= c)
-            {
+            if (b >= c) {
                 mid = b;
                 min = c;
-            } else
-            {
+            } else {
                 mid = c;
                 min = b;
             }
             flagDone = true;
         }
 
-        if (b >= maxValue(a, c) && !flagDone)
-        {
+        if (b >= maxValue(a, c) && !flagDone) {
             max = b;
-            if (a >= c)
-            {
+            if (a >= c) {
                 mid = a;
                 min = c;
-            } else
-            {
+            } else {
                 mid = c;
                 min = a;
             }
             flagDone = true;
         }
 
-        if (c >= maxValue(b, a) && !flagDone)
-        {
+        if (c >= maxValue(b, a) && !flagDone) {
             max = c;
-            if (b >= a)
-            {
+            if (b >= a) {
                 mid = b;
                 min = a;
-            } else
-            {
+            } else {
                 mid = a;
                 min = b;
             }
@@ -68,13 +57,10 @@ public class Solution
         System.out.println(max + " " + mid + " " + min);
     }
 
-    public static int maxValue(int num1, int num2)
-    {
-        if (num1 > num2)
-        {
+    public static int maxValue(int num1, int num2) {
+        if (num1 > num2) {
             return num1;
-        } else
-        {
+        } else {
             return num2;
         }
     }

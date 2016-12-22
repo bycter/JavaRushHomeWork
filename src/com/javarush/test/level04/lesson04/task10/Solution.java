@@ -13,10 +13,8 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         InputStream inputStream = System.in;
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader reader = new BufferedReader(inputStreamReader);
@@ -25,19 +23,15 @@ public class Solution
         int b = Integer.parseInt(reader.readLine());
         int c = Integer.parseInt(reader.readLine());
 
-        if (a == b)
-        {
-            if (b == c)
-            {
+        if (a == b) {
+            if (b == c) {
                 System.out.println(a + " " + b + " " + c);
                 return;
             }
             System.out.println(a + " " + b);
-        } else if (a == c)
-        {
+        } else if (a == c) {
             System.out.println(a + " " + c);
-        } else if (b == c)
-        {
+        } else if (b == c) {
             System.out.println(b + " " + c);
         }
     }
