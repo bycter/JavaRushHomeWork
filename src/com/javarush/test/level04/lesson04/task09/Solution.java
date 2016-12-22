@@ -21,18 +21,33 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class Solution {
-    public static void main(String[] args) throws Exception {
+public class Solution
+{
+    public static void main(String[] args) throws Exception
+    {
         InputStream inputStream = System.in;
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader reader = new BufferedReader(inputStreamReader);
 
-        Double number = null;
-        try {
-            number = Double.parseDouble(reader.readLine());
-        } catch (NumberFormatException e) {
-            System.out.println("Не верные данные!");
-            return;
+        String bufferVar = reader.readLine();
+
+        Double duration = Double.parseDouble(bufferVar);
+
+        Integer durationGreen = 3, durationYellow = 1, durationRed = 1;
+        Double resDuration = (duration % (durationGreen + durationYellow + durationRed));
+
+        if (resDuration < durationGreen)
+
+        {
+            System.out.println("зеленый");
+        } else if (resDuration < (durationGreen + durationYellow))
+
+        {
+            System.out.println("желтый");
+        } else if (resDuration < (durationGreen + durationYellow + durationRed))
+
+        {
+            System.out.println("красный");
         }
     }
 }
