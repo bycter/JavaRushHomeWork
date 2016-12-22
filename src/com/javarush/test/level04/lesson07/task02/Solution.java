@@ -24,11 +24,31 @@ public class Solution {
 
         int a = Integer.parseInt(reader.readLine());
 
+        String s;
         boolean accessFlag = true;
 
-        if (a < 1 || a > 999) {
-            accessFlag = false;
-        }
+        if (a >= 1 && a <= 999) {
+            if ((a % 2) == 0) {
+                s = "четное ";
+            } else {
+                s = "нечетное ";
+            }
 
+            if (a < 10) {
+                s += "однозначное ";
+                accessFlag = false;
+            }
+
+            if (a < 100 && accessFlag) {
+                s += "двузначное ";
+                accessFlag = false;
+            }
+
+            if (a < 1000 && accessFlag) {
+                s += "трехзначное ";
+            }
+
+            System.out.println(s + "число");
+        }
     }
 }
