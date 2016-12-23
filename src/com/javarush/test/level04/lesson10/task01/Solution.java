@@ -9,8 +9,7 @@ public class Solution {
 
         int counter = 0;
         int counterMax = 10;
-        while (counter < counterMax)
-        {
+        while (counter < counterMax) {
             System.out.println(counter + 1);
             counter++;
         }
