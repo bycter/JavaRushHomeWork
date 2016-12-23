@@ -1,7 +1,5 @@
 package com.javarush.test.level04.lesson10.task05;
 
-import java.io.*;
-
 /* Таблица умножения
 Вывести на экран таблицу умножения 10х10 используя цикл while.
 Числа разделить пробелом.
@@ -10,11 +8,24 @@ import java.io.*;
 ...
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
-        //напишите тут ваш код
+public class Solution {
+    public static void main(String[] args) throws Exception {
+
+        int multiplierMax = 10;
+        int numberMax = 10;
+
+        int number = 0;
+        while (number < numberMax) {
+
+            int multiplier = 0;
+            while (multiplier < multiplierMax) {
+                System.out.print((number + 1) * (multiplier + 1));
+                System.out.print(" ");
+                multiplier++;
+            }
+            System.out.print("\n");
+            number++;
+        }
 
     }
 }
