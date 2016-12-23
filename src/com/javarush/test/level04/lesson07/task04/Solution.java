@@ -12,13 +12,30 @@ package com.javarush.test.level04.lesson07.task04;
 количество положительных чисел: 1
 */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
-        //напишите тут ваш код
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        int[] array = new int[3];
+        for (int i = 0; i < 3; i++) {
+            array[i] = Integer.parseInt(reader.readLine());
+        }
+
+        int positive = 0, negative = 0;
+        for (int i = 0; i < 3; i++) {
+            if (array[i] >= 0) {
+                positive++;
+            }
+            if (array[i] < 0) {
+                negative++;
+            }
+        }
+
+        System.out.println("количество отрицательных чисел: " + negative);
+        System.out.println("количество положительных чисел: " + positive);
 
     }
 }
