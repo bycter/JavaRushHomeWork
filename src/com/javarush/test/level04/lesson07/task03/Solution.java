@@ -10,11 +10,22 @@ package com.javarush.test.level04.lesson07.task03;
 
 import java.io.*;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
-        //напишите тут ваш код
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+        int[] array = new int[3];
+        for (int i = 0; i < 3; i++) {
+            array[i] = Integer.parseInt(reader.readLine());
+        }
+
+        int counter = 0;
+        for (int i = 0; i < 3; i++) {
+            if (array[i] >= 0) {
+                counter++;
+            }
+        }
+
+        System.out.println(counter);
     }
 }
