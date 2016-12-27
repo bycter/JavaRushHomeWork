@@ -12,10 +12,8 @@ import java.io.InputStreamReader;/* Меня зовут 'Вася'...
 Я родился 15.2.1988
 */
 
-public class Solution
-{
-    public static void main(String[] args)   throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader((new InputStreamReader(System.in)));
 
         String name = reader.readLine();
