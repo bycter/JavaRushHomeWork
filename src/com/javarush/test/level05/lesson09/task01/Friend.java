@@ -9,9 +9,9 @@ package com.javarush.test.level05.lesson09.task01;
 
 public class Friend
 {
-    String name;
-    int age;
-    String sex;
+    private String name;
+    private int age;
+    private String sex;
 
     public Friend(String name) {
         this.name = name;
