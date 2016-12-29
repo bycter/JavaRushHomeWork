@@ -14,28 +14,22 @@ public class Solution {
     public static void main(String[] args) throws Exception {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int counter = 0;
+        int counter;
+        int maximum;
+        int value;
 
-        while (counter <= 0) {
-            System.out.println("Enter count of numbers. Count should be > 0");
-            counter = Integer.parseInt(reader.readLine());
+        counter = Integer.parseInt(reader.readLine());
+
+        if (counter > 0) {
+
+            maximum = Integer.parseInt(reader.readLine());
+            for (int i = 0; i < counter - 1; i++) {
+
+                value = Integer.parseInt(reader.readLine());
+                maximum = maximum > value ? maximum : value;
+            }
+
+            System.out.println(maximum);
         }
-
-        int[] array = new int[counter];
-
-        System.out.println("Please enter " + counter + " numbers.");
-        for (int i = 0; i < array.length; i++) {
-
-            array[i] = Integer.parseInt(reader.readLine());
-            if (i < array.length) System.out.println("Enter next number.");
-        }
-
-        int maximum = 0;
-
-        for (int j = 0; j < array.length - 1; j++) {
-            maximum = array[j] > array[j + 1] ? array[j] : array[j + 1];
-        }
-
-        System.out.println(maximum);
     }
 }
