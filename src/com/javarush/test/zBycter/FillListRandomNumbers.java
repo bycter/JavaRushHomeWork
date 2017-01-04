@@ -31,15 +31,7 @@ public class FillListRandomNumbers {
         return arrayList;
     }
 
-    public ArrayList<Integer> fillArrayListRandomNumbers(ArrayList<Integer> arrayList, Integer listSize) {
-
-        for (int i = 0; i < listSize; i++) {
-            arrayList.add(ThreadLocalRandom.current().nextInt(minRandom, maxRandom));
-        }
-        return arrayList;
-    }
-
-    public ArrayList<Integer> fillArrayListRandomNumbers(Integer listSize, Integer min, Integer max) {
+    public ArrayList<Integer> fillArrayListRandNum(Integer listSize, Integer min, Integer max) {
 
         for (int i = 0; i < listSize; i++) {
             arrayList.add(ThreadLocalRandom.current().nextInt(min, max));
