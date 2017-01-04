@@ -16,7 +16,7 @@ public class Solution {
 //        FillArrayRandomNumbers fillArrayRandomNumbers = new FillArrayRandomNumbers(10);
 //        int[] array = fillArrayRandomNumbers.fillArrayRandNum(-100, 100);
 //        fillArrayRandomNumbers.printArray();
-
+//        System.out.println(" ");
         for (int i = 0; i < 20; i++) {
             array[i] = Integer.parseInt(reader.readLine());
         }
@@ -36,7 +36,7 @@ public class Solution {
         for (int counter = 1; counter < array.length; counter++) {
             temp = array[counter]; // инициализируем временную переменную текущим значением элемента массива
             item = counter - 1; // запоминаем индекс предыдущего элемента массива
-            while (item >= 0 && array[item] > temp) // пока индекс не равен 0 и предыдущий элемент массива больше текущего
+            while (item >= 0 && array[item] < temp) // пока индекс не равен 0 и предыдущий элемент массива меньше текущего
             {
                 array[item + 1] = array[item]; // перестановка элементов массива
                 array[item] = temp;
