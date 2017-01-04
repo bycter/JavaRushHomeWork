@@ -2,27 +2,27 @@ package com.javarush.test.zBycter;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class FillArraysRandomNumbers {
+public class FillArrayRandomNumbers {
 
     private int[] arrayInt;
     private int minRandom, maxRandom;
     private final int minRandomDefault = 0, maxRandomDefault = 100;
 
-    public FillArraysRandomNumbers(Integer arraySize) {
+    public FillArrayRandomNumbers(Integer arraySize) {
 
         this.arrayInt = new int[arraySize];
         this.minRandom = this.minRandomDefault;
         this.maxRandom = this.maxRandomDefault;
     }
 
-    public FillArraysRandomNumbers(Integer arraySize, int minRandom, int maxRandom) {
+    public FillArrayRandomNumbers(Integer arraySize, int minRandom, int maxRandom) {
 
         this.arrayInt = new int[arraySize];
         this.minRandom = minRandom;
         this.maxRandom = maxRandom;
     }
 
-    public int[] fillArrayListRandNum() {
+    public int[] fillArrayRandNum() {
 
         for (int i = 0; i < arrayInt.length; i++) {
             arrayInt[i] = ThreadLocalRandom.current().nextInt(minRandom, maxRandom);
@@ -30,7 +30,7 @@ public class FillArraysRandomNumbers {
         return arrayInt;
     }
 
-    public int[] fillArrayListRandomNumbers(Integer min, Integer max) {
+    public int[] fillArrayRandNum(Integer min, Integer max) {
 
         for (int i = 0; i < arrayInt.length; i++) {
             arrayInt[i] = ThreadLocalRandom.current().nextInt(min, max);
@@ -38,7 +38,7 @@ public class FillArraysRandomNumbers {
         return arrayInt;
     }
 
-    public void printArrayList() {
+    public void printArray() {
 
         for (Integer integer : arrayInt) {
             System.out.println(integer);
