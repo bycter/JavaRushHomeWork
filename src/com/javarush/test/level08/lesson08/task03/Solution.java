@@ -38,7 +38,7 @@ public class Solution {
 
         int counter = 0;
 
-        for (String s : map.keySet()) {
+        for (String s : map.values()) {
             if (s.equals(name)) {
                 counter++;
             }
@@ -50,7 +50,7 @@ public class Solution {
 
         int counter = 0;
 
-        for (String s : map.values()) {
+        for (String s : map.keySet()) {
             if (s.equals(lastName)) {
                 counter++;
             }
