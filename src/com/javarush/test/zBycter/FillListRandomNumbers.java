@@ -49,12 +49,12 @@ public class FillListRandomNumbers {
         return stringArrayList;
     }
 
-    /*
+    /**
         Метод используется для генерации строки заданной длины случайных символов.
-        Поддержка 2-х языков: английский, русский
-        Входные данные:
-        String lang - язык символов (eng(default), rus),
-        Integer stringSize - длина строки
+        Поддержка 2-х раскладок: английская, русская
+
+        @param lang String - язык символов (eng(default), rus),
+        @param stringSize Integer - длина строки
     */
     public String randomString(String lang, Integer stringSize) {
 
