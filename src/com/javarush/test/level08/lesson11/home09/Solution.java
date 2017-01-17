@@ -13,13 +13,14 @@ public class Solution {
 
     public static void main(String[] args) {
 
-//        System.out.println("JANUARY 1 2000 = " + isDateOdd("JANUARY 1 2000"));
+//        System.out.println("JANUARY 1 2018 = " + isDateOdd("JANUARY 1 2018"));
 //        System.out.println("JANUARY 2 2020 = " + isDateOdd("JANUARY 2 2020"));
+//        System.out.println("February 29 2021 = " + isDateOdd("February 29 2021"));
     }
 
     public static boolean isDateOdd(String date) {
 
-        Date yearStartDay = new Date();
+        Date yearStartDay = new Date(date);
         yearStartDay.setDate(0);
         yearStartDay.setMonth(0);
         yearStartDay.setHours(0);
