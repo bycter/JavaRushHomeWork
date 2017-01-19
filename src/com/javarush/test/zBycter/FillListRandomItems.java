@@ -3,18 +3,18 @@ package com.javarush.test.zBycter;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class FillListRandomNumbers {
+public class FillListRandomItems {
 
     private int minRandom, maxRandom;
     private final int minRandomDefault = 0, maxRandomDefault = 100;
 
-    public FillListRandomNumbers() {
+    public FillListRandomItems() {
 
         this.minRandom = this.minRandomDefault;
         this.maxRandom = this.maxRandomDefault;
     }
 
-    public FillListRandomNumbers(int minRandom, int maxRandom) {
+    public FillListRandomItems(int minRandom, int maxRandom) {
 
         this.minRandom = minRandom;
         this.maxRandom = maxRandom;

@@ -20,7 +20,7 @@ public class Solution {
             array[i] = Integer.parseInt(reader.readLine());
         }
 
-//        FillArrayRandomNumbers fillArrayRandomNumbers = new FillArrayRandomNumbers(20, -150, 5);
+//        FillArrayRandomItems fillArrayRandomNumbers = new FillArrayRandomItems(20, -150, 5);
 //        int[] array = fillArrayRandomNumbers.fillArrayRandNum();
 //
 //        fillArrayRandomNumbers.printArray();

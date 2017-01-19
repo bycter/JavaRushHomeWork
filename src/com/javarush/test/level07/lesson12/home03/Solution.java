@@ -18,7 +18,7 @@ public class Solution {
 
         int arrayListSize = 20;
         ArrayList<Integer> integerArrayList = new ArrayList<>();
-//        FillListRandomNumbers fillArrayList = new FillListRandomNumbers();
+//        FillListRandomItems fillArrayList = new FillListRandomItems();
 //        ArrayList<Integer> integerArrayList = fillArrayList.fillArrayListRandNum(arrayListSize);
 //        fillArrayList.printArrayList();
 

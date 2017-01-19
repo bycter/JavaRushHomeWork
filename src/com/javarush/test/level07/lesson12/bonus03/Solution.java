@@ -13,7 +13,7 @@ public class Solution {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int[] array = new int[20];
-//        FillArrayRandomNumbers fillArrayRandomNumbers = new FillArrayRandomNumbers(10);
+//        FillArrayRandomItems fillArrayRandomNumbers = new FillArrayRandomItems(10);
 //        int[] array = fillArrayRandomNumbers.fillArrayRandNum(-100, 100);
 //        fillArrayRandomNumbers.printArray();
 //        System.out.println(" ");
