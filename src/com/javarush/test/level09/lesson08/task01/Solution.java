@@ -18,9 +18,9 @@ public class Solution {
         try {
             method1();
         } catch (NullPointerException e) {
-            e.printStackTrace();
+
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+
         }
 
     }
