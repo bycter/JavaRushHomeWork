@@ -19,9 +19,9 @@ public class Solution {
 
         ArrayList<String>[] arrayLists = new ArrayList[10];
 
-         for (ArrayList<String> arrayList : arrayLists) {
-            arrayList = new ArrayList<>();
-            arrayList.add(randomString(15));
+         for (int i =0; i < arrayLists.length; i++) {
+            arrayLists[i] = new ArrayList<>();
+            arrayLists[i].add(randomString(15));
         }
         return arrayLists;
     }
